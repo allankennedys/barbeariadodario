@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia do Dário</title>
+    <link rel="icon" href="DÁRIO3-removebg-preview.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-8ic/Iqp28csXyV0p3l+MZxKSXUv0zWTRh6UJd6Uq23ZUuV7W4FKbmyuV7Kjzgpfv2anWQHybSiHilGupfZ/v5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="DÁRIO2-removebg-preview.png" width="80px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#agendamentos">Agendamento</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#nossosplanos">Planos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Unidades
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#unidadesection">Alagoinhas</a></li>
+                  <li><a class="dropdown-item" href="#unidadesection">Feira de Santana</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#unidadesection">Salvador</a></li>
+                </ul>
+              </li>
+            </ul>
+        
+          </div>
+        </div>
+      </nav>
+
+</header>
+<body>
+    <section>
+        <img class="logo" src="DÁRIO-removebg-preview.png" alt="aplicativo da barbearia" width="350px">
+    </section>
+    <section> <h3>  Agende sua visita hoje mesmo e experimente o melhor em barbearia por assinatura!</h3></section>
+    <section id="agendamentos">
+      <div class="formulario">
+      <form>
+        <div>
+          <label class="name" id="name">Nome
+          <input type="text" class="name" name="name" placeholder="Nome Completo">
+          </label>
+        </div>
+          <div>
+          <label class="email" id="email">Email
+            <input class="email" name="email" placeholder="email@exemplo.com" type="email">
+          </label>
+        </div>
+        <div>
+          <label for="unidade">Unid.</label>
+          <select name="unidade" id="unidade">
+            <option value="alagoinhas">Alagoinhas</option>
+            <option value="feiraDeSantana">Feira de Santana</option>
+            <option value="salvador">Salvador</option>
+            <option value="invalid" selected>Selecione a Unidade</option></select>
+        </div>
+        <div>
+          <label for="data">Data:</label>
+  <input type="date" id="data" name="data">
+        </div>
+        <div>
+          <label for="hora">Hora:</label>
+  <input type="time" id="hora" name="hora">
+        </div>
+        <div>
+          <label for="telefone">Telef:</label>
+          <input name="telefone" id="telefone" type="tel" placeholder="(99) 9 9999-9999">
+          <div>
+            <button type="submit">Solicitar Agendamento</button>
+          </div>
+      </form>
+      <p>Nosso time entrará em contato com você.</p>
+    </div>
+    </section>
+    <section id="nossosplanos"> 
+      
+        <h1 class="titulo">Nossos Planos</h1>
+      
+      <div class="planos">
+        <div class="divplano"> 
+          <img src="plano3.png" alt="Plano Básico" width="180px">
+          <h2>Básico</h2>
+          <h4>R$ 39,99</h4>
+          <h5>Um corte de cabelo a cada mês por um preço fixo. Os assinantes recebem ainda descontos em produtos de barbearia e serviços adicionais.</h5>
+          <button class="assinar">Assinar</button>
+                </div>
+        <div class="divplano"> 
+          <img src="plano2.png" alt="Plano Básico" width="180px">
+          <h2>Premium</h2>
+          <h4>R$ 69,99</h4>
+          <h5>Dois cortes de cabelo e uma barba por mês por um preço fixo; Os clientes também podem agendar um horário preferencial com o barbeiro de sua escolha.</h5>
+          <button class="assinar">Assinar</button>
+                </div>
+        <div class="divplano"> 
+          <img src="plano1.png" alt="Plano Básico" width="180px">
+          <h2>Plano VIP</h2>
+          <h4>R$ 129,99</h4>
+          <h5>Quatro cortes de cabelo por mês, barba e outros serviços como tratamento para pelos encravados. inclui descontos exclusivos e agendamento preferencial.</h5>
+          <button class="assinar">Assinar</button>
+        </div>
+      </div>
+    </section>
+    <section id="unidadesection">
+    </section>
+    <section id="unidades">
+      <div class="unid">
+        <h2>Unidade Alagoinhas</h2>
+        <p>Endereço: Rua das Palmeiras, 123</p>
+        <p>Centro</p>
+        <p>Alagoinhas, BA</p>
+        <p>48005-678</p>
+      </div>
+      <div class="unid">
+        <h2>Unidade Feira de Santana</h2>
+        <p>Endereço: Avenida Getúlio Vargas, 456</p>
+        <p>Centro</p>
+        <p>Feira de Santana, BA</p>
+        <p>44001-456</p>
+      </div>
+      <div class="unid">
+        <h2>Unidade Salvador</h2>
+        <p>Endereço: Rua da Vitória, 789</p>
+        <p>Barra</p>
+        <p>Salvador, BA</p>
+        <p>40140-130</p>
+      </div>
+    </section>
+    <section class="footer">
+        <span>Desenvolvido por Allan Kennedy</span>
+    </section>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  
+    <a href="#" class="contact-button" target="_blank">
+      <img src="whatsapp.png" alt="Botão de Contato" />
+    </a>
+    
+</body>
+</html>

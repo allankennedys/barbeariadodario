@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    width: 100%;
+    height: 300px;
+}
+
+section:nth-of-type(1){
+background-image: url(pretoebrancobarba.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 600px;
+background-attachment: fixed;
+
+}
+section:nth-of-type(2){
+    height: 200px;
+}
+section:nth-of-type(3){
+    background-image: url(andrea-donato-MNu0n-3BIKs-unsplash.jpg);
+    background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+    height: 800px;
+    }
+    section:nth-of-type(5){
+        background-image: url(firza-pratama-zRshOvj0K4o-unsplash.jpg);
+        height: 300px;
+        background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+
+
+        }
+        section:nth-of-type(4){
+            height: 650px;
+            
+        }
+    
+        @media(max-width: 767px), (max-width: 1024px){
+            section:nth-of-type(4){
+                height: fit-content;
+                
+            } 
+            .titulo{
+                padding-top: 15px;
+padding-bottom: 15px;
+            }
+            section:nth-of-type(6){
+                height: fit-content;
+                position: absolute;
+            }
+            section:nth-of-type(7){
+                position: fixed;
+            }
+        }
+        
+        section:nth-of-type(7){
+            height: fit-content;
+            display: grid;
+            background-color: black;
+            
+        }
+            
+            h3{
+                color: black;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                text-align: center;
+                font-size: 30px;
+                margin: auto;
+            }
+            section{
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            .titulo{font-family: Arial, Helvetica, sans-serif;
+                color: rgb(0, 0, 0);
+                font-weight: bold;
+                text-align: center;    
+            margin: 0 auto;     
+            font-size: 30px;
+
+           }
+            .logo{
+      margin: 0 auto;      
+      }
+      
+      .formulario{
+        display: flex;
+        margin: 0 auto;
+        background-color: white;
+        border-radius: 16px;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        
+      }
+      input, select{
+        background-color: rgba(255, 255, 255, 0);
+        width: 250px;
+        margin: 10px;
+        border-style: none;
+      }
+      form{
+        text-align: center;
+      }
+        
+      button{
+    border: none;
+    border-radius: 8px;
+    padding: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    }
+    p{
+        font-size: 12px;
+        color: rgb(56, 56, 56);
+    }
+.planos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 80px;
+    justify-content: center;
+
+}
+.divplano{
+    width: 300px;
+    display: grid;
+    text-align: center;
+    justify-items: center;
+    background-color: rgba(230, 229, 229, 0.205);
+    padding: 0px 20px;
+    border-radius: 16px;
+}
+.divplano:hover{
+    background-color: rgba(202, 202, 202, 0.548);
+    transition: 0.5s;
+}
+.assinar{
+    padding: 8px 15px 8px 15px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+#unidades{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+    height: 400px;
+
+}
+
+.unid {
+    flex-basis: 30%;
+    background-color: #f7f7f7;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;}
+
+#unidades h1{
+    color: white;
+   border-radius: 16px;
+   text-align: center;
+   text-shadow: 0px 3px black;
+}
+
+#unidades h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+ #unidades p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+#unidades span{
+text-align: center;
+padding: 30px;
+}
+.footer span{
+    color: white;
+    text-align: center;
+}
+.contact-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff5d;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .contact-button:hover {
+    transform: scale(1.1);
+  }
+  
+  .contact-button img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+  }
+  
